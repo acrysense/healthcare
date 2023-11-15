@@ -36,7 +36,7 @@
 					<nav class="nav header__nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="#" class="nav__link">О конгрессе</a>
+								<a href="#about" class="nav__link">О конгрессе</a>
 							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__link">Участникам</a>
@@ -48,10 +48,10 @@
 								<a href="#" class="nav__link">Партнеры</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Новости</a>
+								<a href="#news" class="nav__link">Новости</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">#Горжусь</a>
+								<a href="#proud" class="nav__link">#Горжусь</a>
 							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__link">СМИ</a>
@@ -61,13 +61,16 @@
 							</li>
 						</ul>
 					</nav>
+					<button class="hamburger" id="hamburger-toggle">
+						<div class="hamburger__group">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</div>
+						<span class="hamburger__title">Меню</span>
+					</button>
 					<div class="header__controls">
 						<a href="#" class="header__control btn btn--sm">Регистрация</a>
 					</div>
-					<button class="hamburger" id="hamburger-toggle">
-						<span class="hamburger__inner"></span>
-						<span class="hamburger__inner"></span>
-					</button>
 				</div>
 			</div>
 		</header>
@@ -299,88 +302,90 @@
 							<h2 class="section-heading__title">Основные направления</h2>
 						</div>
 					</div>
-					<div class="directions__wrapper">
-						<div class="directions__column">
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-01.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Лучшие практики</h3>
-									<p class="directions-card__description">Российские <br>и международные практики организации здравоохранения</p>
-								</div>
-							</article>
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-02.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Экономика</h3>
-									<p class="directions-card__description">Финансовый менеджмент в здравоохранении</p>
-								</div>
-							</article>
-						</div>
-						<div class="directions__column">
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-03.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Стандарты</h3>
-									<p class="directions-card__description">Стандартизация в диагностике и лечении</p>
-								</div>
-							</article>
-						</div>
-						<div class="directions__column">
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-04.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Цифровизация</h3>
-									<p class="directions-card__description">Цифровая трансформация и управление данными в здравоохранении</p>
-								</div>
-							</article>
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-05.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Технологии</h3>
-									<p class="directions-card__description">Современные инструменты и тренды управления здоровьем</p>
-								</div>
-							</article>
-						</div>
-						<div class="directions__column">
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-06.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Кадровый потенциал здравоохранения</h3>
-									<p class="directions-card__description">в том числе лидерство и управление отраслью</p>
-								</div>
-							</article>
-						</div>
-						<div class="directions__column">
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-07.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Фармакоэкономика</h3>
-									<p class="directions-card__description">Фармакоэкономика, медицинская продукция и оборудование</p>
-								</div>
-							</article>
-							<article class="directions-card directions__item">
-								<div class="directions-card__body">
-									<picture class="directions-card__icon">
-										<img src="img/directions-08.svg" alt="Icon">
-									</picture>
-									<h3 class="directions-card__title">Развитие</h3>
-									<p class="directions-card__description">Наука и инновации в биомедицине</p>
-								</div>
-							</article>
+					<div class="directions__wrap">
+						<div class="directions__wrapper">
+							<div class="directions__column">
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-01.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Лучшие практики</h3>
+										<p class="directions-card__description">Российские <br>и международные практики организации здравоохранения</p>
+									</div>
+								</article>
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-02.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Экономика</h3>
+										<p class="directions-card__description">Финансовый менеджмент в здравоохранении</p>
+									</div>
+								</article>
+							</div>
+							<div class="directions__column">
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-03.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Стандарты</h3>
+										<p class="directions-card__description">Стандартизация в диагностике и лечении</p>
+									</div>
+								</article>
+							</div>
+							<div class="directions__column">
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-04.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Цифровизация</h3>
+										<p class="directions-card__description">Цифровая трансформация и управление данными в здравоохранении</p>
+									</div>
+								</article>
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-05.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Технологии</h3>
+										<p class="directions-card__description">Современные инструменты и тренды управления здоровьем</p>
+									</div>
+								</article>
+							</div>
+							<div class="directions__column">
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-06.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Кадровый потенциал здравоохранения</h3>
+										<p class="directions-card__description">в том числе лидерство и управление отраслью</p>
+									</div>
+								</article>
+							</div>
+							<div class="directions__column">
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-07.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Фармакоэкономика</h3>
+										<p class="directions-card__description">Фармакоэкономика, медицинская продукция и оборудование</p>
+									</div>
+								</article>
+								<article class="directions-card directions__item">
+									<div class="directions-card__body">
+										<picture class="directions-card__icon">
+											<img src="img/directions-08.svg" alt="Icon">
+										</picture>
+										<h3 class="directions-card__title">Развитие</h3>
+										<p class="directions-card__description">Наука и инновации в биомедицине</p>
+									</div>
+								</article>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -818,6 +823,151 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="container">
+			<div class="menu__wrap">
+				<div class="menu__topping">
+					<a href="#" class="menu__btn btn btn--sm">Регистрация</a>
+				</div>
+				<div class="menu__top">
+					<picture class="menu__logotype">
+						<img src="img/logotype-white.svg" alt="Национальное здравоохранение 2023">
+					</picture>
+					<div class="menu__controls">
+						<button class="menu__close menu__close-btn" aria-label="Закрыть">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+						<div class="input-field menu__input">
+							<div class="input-field__inner">
+								<button class="input-field__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+								<input type="text" id="menu-search" class="input-field__input" placeholder="Компания">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__main">
+					<div class="menu__block">
+						<div class="menu__item">
+							<a href="#" class="menu__trigger menu__trigger--dropdown">О ФОРУМЕ</a>
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">О Форуме</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu__item">
+							<a href="#" class="menu__trigger menu__trigger--dropdown">ОРГАНИЗАЦИОННЫЙ <br>КОМИТЕТ</a>
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">О Форуме</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu__item">
+							<a href="#" class="menu__trigger">НОВОСТИ</a>
+						</div>
+					</div>
+					<div class="menu__block">
+						<div class="menu__item">
+							<a href="#" class="menu__trigger menu__trigger--dropdown">ПАРТНЕРЫ</a>
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Титульный партнер</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Стратегический партнер</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Официальные партнеры</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Партнеры деловой программы</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Бизнес-партнеры</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Официальные поставщики</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Партнеры культурной программы</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Информационные партнеры</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__block">
+						<div class="menu__item">
+							<a href="#" class="menu__trigger menu__trigger--dropdown">ПРОГРАММА</a>
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Деловая программа</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Стенд Минюста России</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Международный молодежный юридический форум</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">ICJI – Международный центр совместных инициатив</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Спортивная программа</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">АРТ-коктейль</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Культурная программа</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__block">
+						<div class="menu__item">
+							<a href="#" class="menu__trigger menu__trigger--dropdown">СМИ</a>
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Политика упоминаний</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#" class="menu__link">Фотобанк</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu__item">
+							<a href="#" class="menu__trigger">ЖУРНАЛ</a>
+						</div>
+						<div class="menu__item">
+							<a href="#" class="menu__trigger">КОНТАКТЫ</a>
+						</div>
+					</div>
+				</div>
+				<div class="menu__partners">
+					<picture class="menu__partners-item">
+						<img src="img/logotype-white.svg" alt="Image">
+					</picture>
+					<picture class="menu__partners-item">
+						<img src="img/healthcare-white.svg" alt="Image">
+					</picture>
+					<picture class="menu__partners-item">
+						<img src="img/roscongress-white.svg" alt="Image">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of menu -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
